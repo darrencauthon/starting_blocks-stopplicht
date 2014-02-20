@@ -27,8 +27,11 @@ module StartingBlocks
       def display color
         case color
         when :red
+          `echo 1 | nc localhost 17357`
         when :green
+          `echo 2 | nc localhost 17357`
         when :yellow
+          `echo 3 | nc localhost 17357`
         end
       end
     end
