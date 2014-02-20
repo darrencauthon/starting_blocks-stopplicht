@@ -26,6 +26,7 @@ module StartingBlocks
 
       def display color
         puts "Display #{color}"
+        color = "running" if color == :yellow
         `stopplicht-#{color}`
       end
     end
