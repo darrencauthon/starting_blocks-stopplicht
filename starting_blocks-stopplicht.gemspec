@@ -5,11 +5,11 @@ require 'starting_blocks/stopplicht/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "starting_blocks-stopplicht"
-  spec.version       = StartingBlocks::Stopplicht::VERSION
+  spec.version       = "0.0.1"
   spec.authors       = ["Darren Cauthon"]
   spec.email         = ["darren@cauthon.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{stopplicht support for starting_blocks}
+  spec.summary       = %q{stopplicht support for starting_blocks}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -20,4 +20,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+
+  spec.add_runtime_dependency "starting_blocks"
 end
