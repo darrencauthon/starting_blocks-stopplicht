@@ -10,22 +10,10 @@ module StartingBlocks
 
       def receive_results results
         return if @spec_count.to_i == 0
-        if results[:skips].to_i > 0
-          display :yellow
-        end
-        if results[:errors].to_i > 0
-          display :red
-        elsif results[:failures].to_i > 0
-          display :red
-        elsif results[:tests].to_i > 0
-          display :green
-        else
-          display :red
-        end
+        display results[:color]
       end
 
       def display color
-        puts "Display #{color}"
         color = "running" if color == :yellow
         `stopplicht-#{color}`
       end
