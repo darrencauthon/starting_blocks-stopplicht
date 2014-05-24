@@ -6,11 +6,13 @@ module StartingBlocks
         @spec_count = files.count
         return if files.count == 0
         display :yellow
+      rescue
       end
 
       def receive_results results
         return if @spec_count.to_i == 0
         display results[:color]
+      rescue
       end
 
       def display color
