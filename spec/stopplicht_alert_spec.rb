@@ -5,7 +5,23 @@ require 'mocha/setup'
 
 describe 'stopplicht' do
 
-  before do
+  describe "receiving files to run" do
+    it "should display yellow if given files" do
+      alert = StartingBlocks::Extensions::StopplichtAlert.new
+
+      alert.expects(:display).with :yellow
+
+      alert.receive_files_to_run ["another.txt"]
+    end
+
+    it "should display nothing if given no files" do
+      alert = StartingBlocks::Extensions::StopplichtAlert.new
+
+      alert.expects(:display).never
+
+      alert.receive_files_to_run []
+        
+    end
   end
 
   describe "receiving test results" do
