@@ -9,7 +9,7 @@ module StartingBlocks
       end
 
       def receive_results results
-        return if @spec_count.to_i == 0
+        #return if @spec_count.to_i == 0
         display results[:color]
       end
 
