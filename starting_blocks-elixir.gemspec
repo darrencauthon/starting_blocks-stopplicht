@@ -3,12 +3,12 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.name          = "starting_blocks-stopplicht"
+  spec.name          = "starting_blocks-elixir"
   spec.version       = "0.9.0"
   spec.authors       = ["Darren Cauthon"]
   spec.email         = ["darren@cauthon.com"]
-  spec.description   = %q{stopplicht support for starting_blocks}
-  spec.summary       = %q{stopplicht support for starting_blocks}
+  spec.description   = %q{elixir support for starting_blocks}
+  spec.summary       = %q{elixir support for starting_blocks}
   spec.homepage      = ""
   spec.license       = "MIT"
 
