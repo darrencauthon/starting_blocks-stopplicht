@@ -6,6 +6,7 @@ Adds support for stopplicht in starting blocks.  When your tests are run, the st
 
 ## Usage
 
+
 Include "--stopplicht" when using starting blocks.
 
 ```
@@ -13,6 +14,10 @@ sb --stopplicht
 ```
 
 ## Installation
+
+Install stopplicht from NPM at
+
+https://www.npmjs.org/package/stopplicht
 
 Add this line to your application's Gemfile:
 
