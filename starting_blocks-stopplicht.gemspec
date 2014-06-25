@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["darren@cauthon.com"]
   spec.description   = %q{stopplicht support for starting_blocks}
   spec.summary       = %q{stopplicht support for starting_blocks}
-  spec.homepage      = ""
+  spec.homepage      = "http://github.com/darrencauthon/starting_blocks-stopplicht"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
