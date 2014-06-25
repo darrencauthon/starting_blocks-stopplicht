@@ -1,6 +1,16 @@
 # StartingBlocks::Stopplicht
 
-TODO: Write a gem description
+Adds support for stopplicht in starting blocks.  When your tests are run, the stopplicht light in your OSX toolbar will change from yellow/red/green, depending on the state of the starting blocks run.
+
+![Screenshot](screenshot.jpg)
+
+## Usage
+
+Include "--stopplicht" when using starting blocks.
+
+```
+sb --stopplicht
+```
 
 ## Installation
 
@@ -16,9 +26,6 @@ Or install it yourself as:
 
     $ gem install starting_blocks-stopplicht
 
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
